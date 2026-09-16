@@ -15,4 +15,10 @@ public class observado extends absObservado {
                 observador.update();
         }
     }
+    public void inscrever(absObservador observador) {
+        this.listaObservadores.add(observador);
+    }
+    public void remover(absObservador observador) {
+        this.listaObservadores.remove(observador);
+    }
 }
